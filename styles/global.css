@@ -66,7 +66,7 @@ header:hover #lang-arrow svg path {
   color: var(--main-green);
 }
 #header-logo:hover svg {
-  fill: var(--header-grey) !important;
+  fill: var(--main-green) !important;
 }
 #header-logo {
   display: flex;
