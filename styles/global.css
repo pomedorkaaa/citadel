@@ -1,0 +1,107 @@
+:root {
+  --main-green: #017970;
+  --header-grey: #747883;
+}
+
+.container {
+  max-width: 1140px;
+  margin-inline: auto;
+}
+
+* a {
+  text-decoration: none;
+  color: unset;
+}
+* button {
+  cursor: pointer;
+}
+* li {
+  list-style: none;
+}
+
+body {
+  position: relative;
+}
+
+header {
+  position: absolute;
+  background-color: #11111110;
+  width: 100%;
+}
+
+header:hover {
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+header:hover #header-ul {
+  color: black;
+}
+header:hover #header-logo svg {
+  fill: black;
+}
+header:hover #btn-search svg path {
+  stroke: var(--header-grey);
+}
+header:hover #lang-arrow svg path {
+  stroke: var(--header-grey);
+}
+
+#header-ul {
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 23px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "RF Tone";
+  margin-block: 0;
+  color: white;
+  line-height: 20px;
+}
+#header-ul li a:hover {
+  color: var(--main-green);
+}
+#header-logo:hover svg {
+  fill: var(--header-grey) !important;
+}
+#header-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  fill: white;
+}
+#header-ul button {
+  background: transparent;
+  border: none;
+}
+#btn-search:hover svg path {
+  stroke: var(--header-grey) !important;
+}
+
+#language {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+#language button {
+  color: currentColor;
+  padding-inline: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#lang-arrow svg path {
+  stroke: white;
+}
+
+#block-one {
+  min-height: 415px;
+  background-image: url(../images/block-one-bg.png);
+  background-size: cover;
+}
